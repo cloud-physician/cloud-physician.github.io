@@ -1,0 +1,7 @@
+#contact{
+  @include pad(2em 0);
+}
+.contact{
+  @include span-columns(12);
+  margin-bottom: 2em;
+}

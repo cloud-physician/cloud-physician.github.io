@@ -1,0 +1,11 @@
+.section{
+  min-height: 100vh;
+  @include outer-container();
+  @include clearfix();
+  border-bottom: 1px solid #EFEFEF;
+}
+
+#home{
+background-color: lightgoldenrodyellow;
+}
+

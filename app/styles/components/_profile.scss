@@ -1,0 +1,6 @@
+#about-us{
+  @include pad(2em 0);
+}
+.profile{
+  @include span-columns(12);
+}
