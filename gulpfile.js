@@ -16,8 +16,7 @@ var paths = {
 };
 
 var DEPLOY_OPTIONS = {
-    remoteUrl: 'git@github.com:cloud-physician/cloud-physician.github.io.git',
-    branch: 'master'
+    remoteUrl: 'git@github.com:cloud-physician/cloud-physician.github.io.git'
 };
 
 gulp.task('clean', function (cb) {
