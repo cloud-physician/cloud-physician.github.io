@@ -1,11 +1,12 @@
 .section{
-  min-height: 100vh;
+  @include pad(0 0.5rem);
   @include outer-container();
   @include clearfix();
   border-bottom: 1px solid #EFEFEF;
 }
 
 #home{
-background-color: lightgoldenrodyellow;
+  @include pad(0);
+  min-height: 100vh;
 }
 

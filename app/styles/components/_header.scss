@@ -1,6 +1,6 @@
 #logo {
-  width: 7em;
-  height: 3em;
+  width: 7rem;
+  height: 3rem;
   vertical-align: bottom;
 }
 .header__wrapper{
@@ -11,7 +11,7 @@
 }
 .header{
   @include outer-container();
-  @include pad(0 1em);
+  // @include pad(0 1rem);
 }
 .sticky{
   left: 0;
@@ -20,8 +20,8 @@
 .header__title {
   display: inline-block;
   vertical-align: top;
-  width: 1em;
-  margin-left: 0.5em;
+  width: 1rem;
+  margin-left: 0.5rem;
   margin-bottom: 0;
 }
 .header__nav{
@@ -29,21 +29,21 @@
 }
 .header__nav-item{
   display: inline-block;
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
   &:last-of-type{
     margin-right: 0;
   }
   > a {
     display: inline-block;
-    height: 3em;
-    line-height: 2em;
-    padding: 0.5em 0.25em;
+    height: 3rem;
+    line-height: 2rem;
+    padding: 0.5rem 0.25rem;
   }
   .active{
     background-color: lightgray;
     border-top: $aqua 1px solid;
     font-weight: 600;
-    height: calc(3em + 1px);
+    height: calc(3rem + 1px);
     // Try slide animation
   }
 }
@@ -51,7 +51,7 @@
   background-color: lightgray !important;
   font-weight: 600;
   border-top: $aqua 1px solid;
-  height: calc(3em + 1px);
+  height: calc(3rem + 1px);
 }
 
 @include media($medium-screen-up){
@@ -59,13 +59,13 @@
     vertical-align: middle;
   }
   .header__nav-item{
-    margin-right: 1em;
+    margin-right: 1rem;
     > a {
-      padding: 0.5em;
+      padding: 0.5rem;
     }
   }
   .header__title{
-    margin-top: 0.25em;
+    margin-top: 0.25rem;
   }
 }
 

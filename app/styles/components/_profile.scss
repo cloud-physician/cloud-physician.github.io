@@ -1,6 +1,11 @@
 #about-us{
-  @include pad(2em 0);
+  padding-left: 0;
 }
 .profile{
   @include span-columns(12);
+  margin-bottom: 2rem;
+}
+
+.profile__image{
+  @include span-columns(6);
 }

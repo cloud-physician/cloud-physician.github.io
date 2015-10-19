@@ -9,7 +9,8 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     sass = require('gulp-sass'),
     neat = require('node-neat').includePaths,
-    normalize = require('node-normalize-scss').includePaths;
+    normalize = require('node-normalize-scss').includePaths,
+    imageop = require('gulp-image-optimization');
 
 var paths = {
     scss: './assets/sass/*.scss'
@@ -39,7 +40,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('html', function () {
-    gulp.src('app/*.jade')
+    gulp.src(['app/*.jade'])
         .pipe(plumber(''))
         .pipe(jade({
             pretty: true
@@ -56,12 +57,17 @@ gulp.task('js', function () {
 });
 
 gulp.task('assets', function() {
-    gulp.src(['app/assets/**/*'])
+    gulp.src(['app/assets/*'])
         .pipe(plumber(''))
         .pipe(gulp.dest('./build/assets'))
         .pipe(connect.reload());
-});
 
+    gulp.src(['app/assets/*.jpg']).pipe(imageop({
+           optimizationLevel: 3,
+           progressive: true,
+           interlaced: true
+       })).pipe(gulp.dest('./build/assets'))
+});
 
 // gulp.task('appcache', function () {
 //     gulp.src('app/*.appcache')
