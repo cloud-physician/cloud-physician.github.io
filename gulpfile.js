@@ -50,7 +50,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('js', function () {
-    gulp.src(['app/scripts/**/*', '!gulpfile.js'])
+    gulp.src(['app/scripts/**/*', 'app/scripts/*.js','!gulpfile.js'])
         .pipe(plumber(''))
         .pipe(gulp.dest('./build/scripts'))
         .pipe(connect.reload());
@@ -84,7 +84,7 @@ gulp.task('config', function() {
 
 gulp.task('watch', function() {
   gulp.watch('app/styles/**/*', ['css']);
-  gulp.watch('app/scripts/*.js', ['js']);
+  gulp.watch('app/scripts/**/*', ['js']);
   gulp.watch('app/assets/*', ['assets']);
   gulp.watch('app/**/*.jade', ['html']);
   watch('./build/**/*').pipe(connect.reload());

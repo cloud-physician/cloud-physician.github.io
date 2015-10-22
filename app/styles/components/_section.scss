@@ -1,5 +1,5 @@
 .section{
-  @include pad(0 0.5rem);
+  @include pad(0);
   @include outer-container();
   @include clearfix();
   border-bottom: 1px solid #EFEFEF;
@@ -7,6 +7,6 @@
 
 #home{
   @include pad(0);
-  min-height: 100vh;
+  min-height: calc(100vh - 40px);
 }
 
