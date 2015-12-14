@@ -607,6 +607,28 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+.center {
+  text-align: center;
+  margin-bottom: 2rem; }
+
+.title, .sub_title {
+  font-weight: 400; }
+
+.alpha {
+  font-size: 2rem; }
+
+.beta {
+  font-size: 1.5rem; }
+
+.gamma {
+  font-size: 1.25rem; }
+
+.delta {
+  font-size: 1rem; }
+
+.title + .sub_title {
+  margin-top: -0.5rem; }
+
 html {
   box-sizing: border-box; }
 
@@ -747,9 +769,9 @@ html {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
   font-style: normal;
-  line-height: 1.25; }
+  line-height: 1.5; }
   .contact:last-child {
     margin-right: 0; }
   @media screen and (min-width: 35em) {
@@ -757,15 +779,26 @@ html {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%; }
+      width: 31.76157%;
+      margin-left: 8.5298%; }
+      .contact:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 64em) {
+    .contact {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      margin-left: 8.5298%; }
       .contact:last-child {
         margin-right: 0; } }
 
-.contact__line1, .contact__line2 {
-  margin-bottom: 0; }
+.contact__name {
+  margin-bottom: 0.8rem;
+  text-align: left; }
 
-.contact__main, .contact__phone {
-  display: block; }
+.contact__line {
+  margin-bottom: 0; }
 
 .glide--vertical .glide__arrows {
   left: 50%;
