@@ -314,7 +314,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -448,11 +449,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap; }
-  button:hover,
-  button:focus, input[type="button"]:hover,
-  input[type="button"]:focus, input[type="reset"]:hover,
-  input[type="reset"]:focus, input[type="submit"]:hover,
-  input[type="submit"]:focus {
+  button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
     background-color: #3964a2;
     color: #fff; }
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
@@ -595,9 +592,7 @@ a {
   color: #477dca;
   text-decoration: none;
   transition: color 150ms ease; }
-  a:active,
-  a:focus,
-  a:hover {
+  a:active, a:focus, a:hover {
     color: #355e98; }
 
 hr {
@@ -615,9 +610,7 @@ picture {
 html {
   box-sizing: border-box; }
 
-*,
-*::after,
-*::before {
+*, *::after, *::before {
   box-sizing: inherit; }
 
 #logo {
@@ -680,7 +673,7 @@ html {
   border-top: #1BBBB7 1px solid;
   height: calc(3em + 1px); }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 64em) {
   #logo {
     vertical-align: middle; }
   .header__nav-item {
@@ -695,10 +688,10 @@ html {
     padding: 0; } }
 
 .section {
-  min-height: 100vh;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  padding: 2rem 1rem;
   border-bottom: 1px solid #EFEFEF; }
   .section::after {
     clear: both;
@@ -708,32 +701,71 @@ html {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (min-width: 64em) {
+    .section {
+      padding-left: 0;
+      padding-right: 0; } }
 
 #home {
-  background-color: lightgoldenrodyellow; }
-
-#about-us {
-  padding: 2em 0; }
+  padding: 0; }
 
 .profile {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 2rem; }
   .profile:last-child {
     margin-right: 0; }
 
-#contact {
-  padding: 2em 0; }
+.profile__image, .profile__content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .profile__image:last-child, .profile__content:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 64em) {
+    .profile__image, .profile__content {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .profile__image:last-child, .profile__content:last-child {
+        margin-right: 0; } }
+
+.profile__image {
+  position: relative;
+  height: 30rem;
+  overflow: hidden; }
+  .profile__image img {
+    width: 95%;
+    height: auto; }
 
 .contact {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  font-style: normal;
+  line-height: 1.25; }
   .contact:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 35em) {
+    .contact {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .contact:last-child {
+        margin-right: 0; } }
+
+.contact__line1, .contact__line2 {
+  margin-bottom: 0; }
+
+.contact__main, .contact__phone {
+  display: block; }
 
 .glide--vertical .glide__arrows {
   left: 50%;
