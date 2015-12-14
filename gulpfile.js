@@ -42,7 +42,7 @@ gulp.task('html', function () {
         .pipe(jade({
             pretty: true
         }))
-        .pipe(gulp.dest('./build'))
+        .pipe(gulp.dest('./'))
         .pipe(connect.reload());
 });
 
