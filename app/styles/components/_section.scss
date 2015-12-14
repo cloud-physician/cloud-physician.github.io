@@ -11,13 +11,12 @@
 
 #home {
   @include pad(0);
-  @include media($mobile-screen-up){
-    min-height: calc(100vh - 49px);
-  }
+  min-height: calc(100vh - 49px);
+  margin-top: 10vh;
 }
 
 #glide {
-  @include media($mobile-screen-up){
+  @include media($small-screen-up) {
    margin-top: calc((100vh - 49px - 900px) / 2);
   }
 }
