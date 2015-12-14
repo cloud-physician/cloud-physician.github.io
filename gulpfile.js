@@ -90,8 +90,8 @@ gulp.task('serve', ['build'], function() {
 });
 
 gulp.task('deploy', function () {
-    return gulp.src('./build/**/*')
-        .pipe(deploy(DEPLOY_OPTIONS));
+    gulp.src(['./build/**/*', './build/*'])
+       .pipe(gulp.dest('./'));
 });
 
 gulp.task('build', ['clean', 'html', 'css', 'js', 'assets', 'config']);
