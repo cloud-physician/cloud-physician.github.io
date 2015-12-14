@@ -1,7 +1,14 @@
-.contact{
-  @include span-columns(12);
-  margin-bottom: 2em;
+#contact{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
+
+.contact{
+  @include span-columns(6);
+  margin-bottom: 2em;
+  font-style: normal;
+}
+
 
 .contact__phone, .contact__mail{
   display: block;
