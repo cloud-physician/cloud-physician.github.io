@@ -3,8 +3,17 @@
   margin-bottom: 2rem;
 }
 
+.sub_title{
+  color: #666;
+}
+
+.title{
+}
+
 .title, .sub_title {
   font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .alpha{
