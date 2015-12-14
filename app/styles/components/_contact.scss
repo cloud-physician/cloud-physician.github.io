@@ -1,17 +1,23 @@
 .contact{
   @include span-columns(12);
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
   font-style: normal;
-  line-height: 1.25;
+  line-height: 1.5;
   @include media($small-screen-up){
-    @include span-columns(6)
+    @include span-columns(4);
+    @include shift(1)
+  }
+  @include media($medium-screen-up){
+    @include span-columns(5);
+    @include shift(1)
   }
 }
 
-.contact__line1, .contact__line2{
-  margin-bottom: 0;
+.contact__name{
+  margin-bottom: 0.8rem;
+  text-align: left;
 }
 
-.contact__main, .contact__phone{
-  display: block;
+.contact__line{
+  margin-bottom: 0;
 }

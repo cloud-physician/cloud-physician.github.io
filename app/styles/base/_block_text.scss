@@ -1,0 +1,28 @@
+.center{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title, .sub_title {
+  font-weight: 400;
+}
+
+.alpha{
+  font-size: 2rem;
+}
+
+.beta{
+  font-size: 1.5rem;
+}
+
+.gamma{
+  font-size: 1.25rem;
+}
+
+.delta {
+  font-size: 1rem;
+}
+
+.title + .sub_title {
+  margin-top: -0.5rem;
+}
