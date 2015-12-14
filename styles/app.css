@@ -734,11 +734,14 @@ html {
       padding-right: 0; } }
 
 #home {
-  padding: 0;
-  min-height: calc(100vh - 49px); }
+  padding: 0; }
+  @media screen and (min-width: 64em) {
+    #home {
+      min-height: calc(100vh - 49px); } }
 
-#glide {
-  margin-top: calc((100vh - 49px - 900px) / 2); }
+@media screen and (min-width: 64em) {
+  #glide {
+    margin-top: calc((100vh - 49px - 900px) / 2); } }
 
 .profile {
   float: left;
