@@ -1,6 +1,22 @@
-#about-us{
-  @include pad(2em 0);
-}
 .profile{
   @include span-columns(12);
+  margin-bottom: 2rem;
+}
+.profile__image, .profile__content{
+  @include span-columns(12);
+  @include media($medium-screen-up){
+    @include span-columns(6);
+  }
+}
+
+.profile__image{
+  position: relative;
+  height: 30rem;
+  overflow: hidden;
+
+  img {
+    width: 95%;
+    height: auto;
+  }
+
 }

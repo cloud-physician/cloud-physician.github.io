@@ -1,7 +1,17 @@
-#contact{
-  @include pad(2em 0);
-}
 .contact{
   @include span-columns(12);
   margin-bottom: 2em;
+  font-style: normal;
+  line-height: 1.25;
+  @include media($small-screen-up){
+    @include span-columns(6)
+  }
+}
+
+.contact__line1, .contact__line2{
+  margin-bottom: 0;
+}
+
+.contact__main, .contact__phone{
+  display: block;
 }

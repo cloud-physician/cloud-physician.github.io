@@ -1,11 +1,14 @@
 .section{
-  min-height: 100vh;
   @include outer-container();
   @include clearfix();
+  @include pad(2rem 1rem);
   border-bottom: 1px solid #EFEFEF;
+  @include media($medium-screen-up){
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-#home{
-background-color: lightgoldenrodyellow;
+#home {
+  @include pad(0);
 }
-
