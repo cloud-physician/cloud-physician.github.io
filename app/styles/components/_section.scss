@@ -11,4 +11,9 @@
 
 #home {
   @include pad(0);
+  min-height: calc(100vh - 49px);
+}
+
+#glide {
+  margin-top: calc((100vh - 49px - 900px) / 2);
 }

@@ -734,7 +734,11 @@ html {
       padding-right: 0; } }
 
 #home {
-  padding: 0; }
+  padding: 0;
+  min-height: calc(100vh - 49px); }
+
+#glide {
+  margin-top: calc((100vh - 49px - 900px) / 2); }
 
 .profile {
   float: left;
@@ -764,10 +768,15 @@ html {
 .profile__image {
   position: relative;
   height: 30rem;
-  overflow: hidden; }
+  overflow: hidden;
+  max-width: 35rem; }
   .profile__image img {
     width: 95%;
     height: auto; }
+
+[src="assets/dileep.jpg"] {
+  position: absolute;
+  top: -10%; }
 
 .contact {
   float: left;
@@ -913,13 +922,13 @@ html {
 
 .glide__text {
   position: absolute;
-  bottom: 40%;
+  top: 30%;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  height: 10em;
   color: white;
   text-align: center;
   vertical-align: middle;
-  line-height: 10;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  padding: 3rem 0;
+  line-height: 1.5; }

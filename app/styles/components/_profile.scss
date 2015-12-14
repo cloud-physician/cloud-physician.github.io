@@ -13,10 +13,16 @@
   position: relative;
   height: 30rem;
   overflow: hidden;
-
+  max-width: 35rem;
   img {
     width: 95%;
     height: auto;
   }
 
+}
+
+
+[src="assets/dileep.jpg"] {
+  position: absolute;
+  top: -10%;
 }

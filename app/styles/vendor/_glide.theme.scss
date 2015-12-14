@@ -108,17 +108,16 @@
 }
 .glide__text{
   position: absolute;
-  bottom: 40%;
+  top: 30%;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  height: 10em;
   color: white;
   text-align: center;
   vertical-align: middle;
-  line-height: 10;
   font-size: 1.5em;
-
+  padding: 3rem 0;
+  line-height: 1.5;
 }
 .glide {
   // height: 100vh;
