@@ -735,12 +735,10 @@ html {
 
 #home {
   padding: 0;
-  min-height: calc(100vh - 49px);
-  margin-top: 10vh; }
+  min-height: calc(100vh - 49px); }
 
-@media screen and (min-width: 35em) {
-  #glide {
-    margin-top: calc((100vh - 49px - 900px) / 2); } }
+#glide {
+  margin-top: 5%; }
 
 .profile {
   float: left;

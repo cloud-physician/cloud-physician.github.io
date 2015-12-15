@@ -12,11 +12,8 @@
 #home {
   @include pad(0);
   min-height: calc(100vh - 49px);
-  margin-top: 10vh;
 }
 
 #glide {
-  @include media($small-screen-up) {
-   margin-top: calc((100vh - 49px - 900px) / 2);
-  }
+  margin-top: 5%;
 }
