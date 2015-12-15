@@ -740,6 +740,9 @@ html {
 #glide {
   margin-top: 5%; }
 
+#main, body, html {
+  min-width: 24rem; }
+
 .profile {
   float: left;
   display: block;
