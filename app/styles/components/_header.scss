@@ -1,7 +1,6 @@
 #logo {
-  width: 7em;
-  height: 3em;
-  vertical-align: bottom;
+  height: 3.5rem;
+  vertical-align: text-top;
 }
 .header__wrapper{
   background-color: $header-background;
@@ -11,7 +10,7 @@
 }
 .header{
   @include outer-container();
-  @include pad(0 1em);
+  @include pad(0 1rem);
 }
 .sticky{
   left: 0;
@@ -36,14 +35,14 @@
   > a {
     display: inline-block;
     height: 3em;
-    line-height: 2em;
-    padding: 0.5em 0.25em;
+    line-height: 1.5;
+    padding: 1rem 0.25em;
+    font-size: 1.2rem;
   }
   .active{
     background-color: lightgray;
     border-top: $aqua 1px solid;
     font-weight: 600;
-    height: calc(3em + 1px);
     // Try slide animation
   }
 }
@@ -51,18 +50,11 @@
   background-color: lightgray !important;
   font-weight: 600;
   border-top: $aqua 1px solid;
-  height: calc(3em + 1px);
 }
 
 @include media($medium-screen-up){
-  #logo {
-    vertical-align: middle;
-  }
   .header__nav-item{
     margin-right: 1em;
-    > a {
-      padding: 0.5em;
-    }
   }
   .header__title{
     margin-top: 0.25em;
@@ -71,9 +63,6 @@
 
 @include media($large-screen-up) {
   .header {
-    @include pad(0);
-  }
-  #logo{
-    // height: 3.5em;
+    @include pad(0 1rem);
   }
 }

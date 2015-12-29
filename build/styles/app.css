@@ -641,9 +641,8 @@ html {
   box-sizing: inherit; }
 
 #logo {
-  width: 7em;
-  height: 3em;
-  vertical-align: bottom; }
+  height: 3.5rem;
+  vertical-align: text-top; }
 
 .header__wrapper {
   background-color: #ddd;
@@ -658,7 +657,7 @@ html {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1em; }
+  padding: 0 1rem; }
   .header::after {
     clear: both;
     content: "";
@@ -686,33 +685,28 @@ html {
   .header__nav-item > a {
     display: inline-block;
     height: 3em;
-    line-height: 2em;
-    padding: 0.5em 0.25em; }
+    line-height: 1.5;
+    padding: 1rem 0.25em;
+    font-size: 1.2rem; }
   .header__nav-item .active {
     background-color: lightgray;
     border-top: #1BBBB7 1px solid;
-    font-weight: 600;
-    height: calc(3em + 1px); }
+    font-weight: 600; }
 
 [style*="position: static"] [href="#home"] {
   background-color: lightgray !important;
   font-weight: 600;
-  border-top: #1BBBB7 1px solid;
-  height: calc(3em + 1px); }
+  border-top: #1BBBB7 1px solid; }
 
 @media screen and (min-width: 64em) {
-  #logo {
-    vertical-align: middle; }
   .header__nav-item {
     margin-right: 1em; }
-    .header__nav-item > a {
-      padding: 0.5em; }
   .header__title {
     margin-top: 0.25em; } }
 
 @media screen and (min-width: 69em) {
   .header {
-    padding: 0; } }
+    padding: 0 1rem; } }
 
 .section {
   max-width: 68em;
@@ -779,7 +773,10 @@ html {
 
 [src="assets/dileep.jpg"] {
   position: absolute;
-  top: -10%; }
+  top: 2%; }
+  @media screen and (min-width: 64em) {
+    [src="assets/dileep.jpg"] {
+      top: -10%; } }
 
 .contact {
   float: left;

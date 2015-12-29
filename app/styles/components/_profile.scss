@@ -24,5 +24,8 @@
 
 [src="assets/dileep.jpg"] {
   position: absolute;
-  top: -10%;
+  top: 2%;
+  @include media($medium-screen-up) {
+    top: -10%;
+  }
 }
