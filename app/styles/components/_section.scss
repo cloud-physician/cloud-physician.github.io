@@ -3,7 +3,10 @@
   @include clearfix();
   @include pad(2rem 1rem);
   border-bottom: 1px solid #EFEFEF;
-  min-height: calc(100vh - 3.5rem);
+  min-height: 100vh;
+  @include media($small-screen-up) {
+    min-height: calc(100vh - 3.5rem);
+  }
   @include media($medium-screen-up){
     padding-left: 0;
     padding-right: 0;
@@ -12,6 +15,7 @@
 
 #home {
   @include pad(0);
+  min-height: calc(100vh - 3.5rem);
 }
 
 #main, body, html{

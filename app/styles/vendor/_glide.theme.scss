@@ -105,15 +105,18 @@
 
 .glide__slide {
   position: relative;
-  height: calc(100vh - 3.5rem);
   background-position: center center;
   background-repeat:  no-repeat;
   background-size:  cover;
-  img {
-    height: 100vh;
-    width: auto;
+  min-height: 100vh;
+  @include media($small-screen-up) {
+    min-height: calc(100vh - 3.5rem);
   }
 }
+#home .glide__slide {
+  min-height: calc(100vh - 3.5rem);
+}
+
 .glide__slide--1{
   background-image: url('../assets/carousel-image-1.jpg');
   .glide__text {

@@ -712,7 +712,7 @@ html {
   margin-right: auto;
   padding: 2rem 1rem;
   border-bottom: 1px solid #EFEFEF;
-  min-height: calc(100vh - 3.5rem); }
+  min-height: 100vh; }
   .section::after {
     clear: both;
     content: "";
@@ -721,13 +721,17 @@ html {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (min-width: 35em) {
+    .section {
+      min-height: calc(100vh - 3.5rem); } }
   @media screen and (min-width: 64em) {
     .section {
       padding-left: 0;
       padding-right: 0; } }
 
 #home {
-  padding: 0; }
+  padding: 0;
+  min-height: calc(100vh - 3.5rem); }
 
 #main, body, html {
   min-width: 24rem; }
@@ -923,13 +927,16 @@ html {
 
 .glide__slide {
   position: relative;
-  height: calc(100vh - 3.5rem);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
-  .glide__slide img {
-    height: 100vh;
-    width: auto; }
+  background-size: cover;
+  min-height: 100vh; }
+  @media screen and (min-width: 35em) {
+    .glide__slide {
+      min-height: calc(100vh - 3.5rem); } }
+
+#home .glide__slide {
+  min-height: calc(100vh - 3.5rem); }
 
 .glide__slide--1 {
   background-image: url("../assets/carousel-image-1.jpg"); }

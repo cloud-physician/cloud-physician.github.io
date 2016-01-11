@@ -1,4 +1,4 @@
 $(function() {
-  $('.header__wrapper').stickyNavbar()
+  $('.header__wrapper').stickyNavbar();
   $('#glide').glide();
 });
