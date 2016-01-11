@@ -3,6 +3,7 @@
   @include clearfix();
   @include pad(2rem 1rem);
   border-bottom: 1px solid #EFEFEF;
+  min-height: calc(100vh - 3.5rem);
   @include media($medium-screen-up){
     padding-left: 0;
     padding-right: 0;
@@ -11,11 +12,6 @@
 
 #home {
   @include pad(0);
-  min-height: calc(100vh - 49px);
-}
-
-#glide {
-  margin-top: 5%;
 }
 
 #main, body, html{

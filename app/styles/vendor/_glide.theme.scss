@@ -105,19 +105,49 @@
 
 .glide__slide {
   position: relative;
+  height: calc(100vh - 3.5rem);
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-size:  cover;
+  img {
+    height: 100vh;
+    width: auto;
+  }
+}
+.glide__slide--1{
+  background-image: url('../assets/carousel-image-1.jpg');
+  .glide__text {
+    display: none;
+  }
+}
+.glide__slide--2{
+  background-image: url('../assets/carousel-image-2.jpg');
+  .glide__text {
+    display: none;
+  }
+}
+.glide__slide--3{
+  background-image: url('../assets/carousel-image-3.jpeg');
 }
 .glide__text{
   position: absolute;
-  top: 30%;
+  top: 19%;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
   vertical-align: middle;
-  font-size: 1.5em;
-  padding: 3rem 0;
+  font-weight: 300;
   line-height: 1.5;
+  font-size: 1.4rem;
+  padding: 3rem 7.5%;
+  @include media($medium-screen-up) {
+    font-size: 1.5rem;
+    padding: 3rem 25%;
+  }
+  @include media($large-screen-up) {
+    font-size: 1.75rem;
+  }
 }
 .glide {
   // height: 100vh;
