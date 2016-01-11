@@ -788,7 +788,7 @@ html {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%;
+      width: 40.29137%;
       margin-left: 8.5298%; }
       .contact:last-child {
         margin-right: 0; } }
@@ -808,6 +808,15 @@ html {
 
 .contact__line {
   margin-bottom: 0; }
+
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.inner {
+  flex: none;
+  max-width: 100%; }
 
 .glide--vertical .glide__arrows {
   left: 50%;

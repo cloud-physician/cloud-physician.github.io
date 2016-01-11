@@ -82,7 +82,7 @@ gulp.task('watch', function() {
   watch('./build/**/*').pipe(connect.reload());
 });
 
-gulp.task('serve', ['build'], function() {
+gulp.task('serve', ['clean', 'build'], function() {
   connect.server({
     root: 'build',
     livereload: true,
@@ -95,6 +95,6 @@ gulp.task('deploy', function () {
        .pipe(gulp.dest('./'));
 });
 
-gulp.task('build', ['clean', 'html', 'css', 'js', 'assets', 'config']);
+gulp.task('build', ['html', 'css', 'js', 'assets', 'config']);
 
 gulp.task('default', ['serve', 'watch']);

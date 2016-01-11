@@ -4,12 +4,12 @@
   font-style: normal;
   line-height: 1.5;
   @include media($small-screen-up){
-    @include span-columns(4);
-    @include shift(1)
+    @include span-columns(5);
+    @include shift(1);
   }
   @include media($medium-screen-up){
     @include span-columns(5);
-    @include shift(1)
+    @include shift(1);
   }
 }
 
@@ -21,3 +21,14 @@
 .contact__line{
   margin-bottom: 0;
 }
+
+  #contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inner {
+    flex: none;
+    max-width: 100%;
+  }
