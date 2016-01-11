@@ -41,15 +41,16 @@
   }
   .active{
     background-color: lightgray;
-    border-top: $aqua 1px solid;
+    border-top: $action-highlighted 2px solid;
     font-weight: 600;
-    // Try slide animation
+    color: $action-highlighted;
   }
 }
 [style*="position: static"] [href="#home"]{
   background-color: lightgray !important;
   font-weight: 600;
-  border-top: $aqua 1px solid;
+  border-top: $action-highlighted 2px solid;
+  color: $action-highlighted;
 }
 
 @include media($medium-screen-up){
@@ -58,11 +59,5 @@
   }
   .header__title{
     margin-top: 0.25em;
-  }
-}
-
-@include media($large-screen-up) {
-  .header {
-    @include pad(0 1rem);
   }
 }

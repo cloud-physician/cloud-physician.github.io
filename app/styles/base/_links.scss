@@ -1,0 +1,6 @@
+a {
+  color: $action-color;
+  &:active, &:focus, &:hover, &.active{
+    color: $blue-chill;
+  }
+}

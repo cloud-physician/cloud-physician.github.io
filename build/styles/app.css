@@ -432,7 +432,7 @@ th {
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
-  background-color: #477dca;
+  background-color: #1BBBB7;
   border: 0;
   border-radius: 3px;
   color: #fff;
@@ -450,13 +450,13 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
   button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-    background-color: #3964a2;
+    background-color: #169692;
     color: #fff; }
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
     button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
-      background-color: #477dca; }
+      background-color: #1BBBB7; }
 
 fieldset {
   background-color: #f7f7f7;
@@ -497,8 +497,8 @@ select[multiple=multiple] {
     border-color: #b1b1b1; }
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
   select[multiple=multiple]:focus {
-    border-color: #477dca;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    border-color: #1BBBB7;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(24, 165, 161, 0.7);
     outline: none; }
   input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, textarea:disabled,
   select[multiple=multiple]:disabled {
@@ -589,11 +589,11 @@ p {
   margin: 0 0 0.75em; }
 
 a {
-  color: #477dca;
+  color: #1BBBB7;
   text-decoration: none;
   transition: color 150ms ease; }
   a:active, a:focus, a:hover {
-    color: #355e98; }
+    color: #148c89; }
 
 hr {
   border-bottom: 1px solid #ddd;
@@ -690,23 +690,21 @@ html {
     font-size: 1.2rem; }
   .header__nav-item .active {
     background-color: lightgray;
-    border-top: #1BBBB7 1px solid;
-    font-weight: 600; }
+    border-top: #169692 2px solid;
+    font-weight: 600;
+    color: #169692; }
 
 [style*="position: static"] [href="#home"] {
   background-color: lightgray !important;
   font-weight: 600;
-  border-top: #1BBBB7 1px solid; }
+  border-top: #169692 2px solid;
+  color: #169692; }
 
 @media screen and (min-width: 64em) {
   .header__nav-item {
     margin-right: 1em; }
   .header__title {
     margin-top: 0.25em; } }
-
-@media screen and (min-width: 69em) {
-  .header {
-    padding: 0 1rem; } }
 
 .section {
   max-width: 68em;
@@ -947,7 +945,7 @@ html {
   vertical-align: middle;
   font-weight: 300;
   line-height: 1.5;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding: 3rem 7.5%; }
   @media screen and (min-width: 64em) {
     .glide__text {
