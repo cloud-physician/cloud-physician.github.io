@@ -53,6 +53,10 @@
   color: $action-highlighted;
 }
 
+[style*="position: fixed"] + #home {
+  padding-top: 4rem;
+}
+
 @include media($medium-screen-up){
   .header__nav-item{
     margin-right: 1em;

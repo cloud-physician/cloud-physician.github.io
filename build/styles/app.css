@@ -700,6 +700,9 @@ html {
   border-top: #169692 2px solid;
   color: #169692; }
 
+[style*="position: fixed"] + #home {
+  padding-top: 4rem; }
+
 @media screen and (min-width: 64em) {
   .header__nav-item {
     margin-right: 1em; }
