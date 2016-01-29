@@ -103,6 +103,11 @@
   opacity: 0.33;
 }
 
+
+.glide {
+  min-width: 100vw;
+}
+
 .glide__slide {
   position: relative;
   background-position: center center;
@@ -118,23 +123,17 @@
 }
 
 .glide__slide--1{
-  background-image: url('../assets/carousel-image-1.jpg');
-  .glide__text {
-    display: none;
-  }
+  background-image: url('../assets/image-1.jpg');
 }
 .glide__slide--2{
-  background-image: url('../assets/carousel-image-2.jpg');
-  .glide__text {
-    display: none;
-  }
+  background-image: url('../assets/image-2.jpg');
 }
 .glide__slide--3{
-  background-image: url('../assets/carousel-image-3.jpeg');
+  background-image: url('../assets/image-3.jpg');
 }
 .glide__text{
   position: absolute;
-  top: 19%;
+  top: 25%;
   left: 0;
   right: 0;
   color: white;
@@ -152,6 +151,22 @@
     font-size: 1.75rem;
   }
 }
-.glide {
-  // height: 100vh;
+.glide__icon {
+  position: absolute;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  height: 6rem;
+  width: 6rem;
+  top: 15%;
+  left: calc(50% - 3rem);
+}
+
+.glide__icon--1 {
+  background-image: url('../assets/icon-1.svg');
+}
+.glide__icon--2 {
+  background-image: url('../assets/icon-2.svg');
+}
+.glide__icon--3 {
+  background-image: url('../assets/icon-3.svg');
 }

@@ -700,9 +700,6 @@ html {
   border-top: #169692 2px solid;
   color: #169692; }
 
-[style*="position: fixed"] + #home {
-  padding-top: 4rem; }
-
 @media screen and (min-width: 64em) {
   .header__nav-item {
     margin-right: 1em; }
@@ -715,7 +712,8 @@ html {
   margin-right: auto;
   padding: 2rem 1rem;
   border-bottom: 1px solid #EFEFEF;
-  min-height: 100vh; }
+  min-height: 100vh;
+  position: relative; }
   .section::after {
     clear: both;
     content: "";
@@ -734,7 +732,10 @@ html {
 
 #home {
   padding: 0;
-  min-height: calc(100vh - 3.5rem); }
+  min-height: 100vh;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0; }
 
 #main, body, html {
   min-width: 24rem; }
@@ -928,6 +929,9 @@ html {
 .glide--slider .glide__arrow.disabled {
   opacity: 0.33; }
 
+.glide {
+  min-width: 100vw; }
+
 .glide__slide {
   position: relative;
   background-position: center center;
@@ -942,21 +946,17 @@ html {
   min-height: calc(100vh - 3.5rem); }
 
 .glide__slide--1 {
-  background-image: url("../assets/carousel-image-1.jpg"); }
-  .glide__slide--1 .glide__text {
-    display: none; }
+  background-image: url("../assets/image-1.jpg"); }
 
 .glide__slide--2 {
-  background-image: url("../assets/carousel-image-2.jpg"); }
-  .glide__slide--2 .glide__text {
-    display: none; }
+  background-image: url("../assets/image-2.jpg"); }
 
 .glide__slide--3 {
-  background-image: url("../assets/carousel-image-3.jpeg"); }
+  background-image: url("../assets/image-3.jpg"); }
 
 .glide__text {
   position: absolute;
-  top: 19%;
+  top: 25%;
   left: 0;
   right: 0;
   color: white;
@@ -973,3 +973,21 @@ html {
   @media screen and (min-width: 69em) {
     .glide__text {
       font-size: 1.75rem; } }
+
+.glide__icon {
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 6rem;
+  width: 6rem;
+  top: 15%;
+  left: calc(50% - 3rem); }
+
+.glide__icon--1 {
+  background-image: url("../assets/icon-1.svg"); }
+
+.glide__icon--2 {
+  background-image: url("../assets/icon-2.svg"); }
+
+.glide__icon--3 {
+  background-image: url("../assets/icon-3.svg"); }

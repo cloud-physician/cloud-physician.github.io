@@ -4,6 +4,7 @@
   @include pad(2rem 1rem);
   border-bottom: 1px solid #EFEFEF;
   min-height: 100vh;
+  position: relative;
   @include media($small-screen-up) {
     min-height: calc(100vh - 3.5rem);
   }
@@ -15,7 +16,10 @@
 
 #home {
   @include pad(0);
-  min-height: calc(100vh - 3.5rem);
+  min-height: 100vh;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #main, body, html{
