@@ -1,31 +1,59 @@
 .profile{
   @include span-columns(12);
   margin-bottom: 2rem;
+  @include media($medium-screen-up) {
+    @include span-columns(6);
+    margin-bottom: 0;
+  }
 }
 .profile__image, .profile__content{
   @include span-columns(12);
-  @include media($medium-screen-up){
-    @include span-columns(6);
+}
+
+.profile__content {
+  padding-left: 10%;
+  padding-right: 10%;
+
+  @include media($large-screen-up) {
+   padding-left: 0;
+   padding-right: 0;
   }
 }
 
 .profile__image{
   position: relative;
-  height: 30rem;
-  overflow: hidden;
-  max-width: 35rem;
   img {
-    width: 95%;
-    height: auto;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border: $base-border;
+    width: 20rem;
+    height: 20rem;
+
+    @include media($small-screen-up) {
+      width: 24rem;
+      height: 24rem;
+    }
   }
 
 }
 
+.profile__name, .profile__qualification {
+  text-align: center;
+}
 
-[src="assets/dileep.jpg"] {
-  position: absolute;
-  top: 2%;
+#about-us {
   @include media($medium-screen-up) {
-    top: -10%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
   }
 }

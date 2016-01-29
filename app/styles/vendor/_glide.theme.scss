@@ -106,6 +106,9 @@
 
 .glide {
   min-width: 100vw;
+  @include media($small-screen-up) {
+    padding-top: 4rem;
+  }
 }
 
 .glide__slide {
@@ -133,7 +136,7 @@
 }
 .glide__text{
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 0;
   right: 0;
   color: white;
@@ -149,16 +152,26 @@
   }
   @include media($large-screen-up) {
     font-size: 1.75rem;
+    top: 25%;
   }
 }
 .glide__icon {
   position: absolute;
   background-position: center center;
   background-repeat:  no-repeat;
-  height: 6rem;
-  width: 6rem;
+  height: 3rem;
+  width: 3rem;
   top: 15%;
-  left: calc(50% - 3rem);
+  left: calc(50% - 1.5rem);
+  @include media($medium-screen-up) {
+    height: 4rem;
+    width: 4rem;
+  }
+  @include media($large-screen-up) {
+    height: 6rem;
+    width: 6rem;
+    left: calc(50% - 3rem);
+  }
 }
 
 .glide__icon--1 {

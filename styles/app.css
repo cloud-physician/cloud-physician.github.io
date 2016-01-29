@@ -748,6 +748,15 @@ html {
   margin-bottom: 2rem; }
   .profile:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 64em) {
+    .profile {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-bottom: 0; }
+      .profile:last-child {
+        margin-right: 0; } }
 
 .profile__image, .profile__content {
   float: left;
@@ -756,30 +765,43 @@ html {
   width: 100%; }
   .profile__image:last-child, .profile__content:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 64em) {
-    .profile__image, .profile__content {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
-      .profile__image:last-child, .profile__content:last-child {
-        margin-right: 0; } }
+
+.profile__content {
+  padding-left: 10%;
+  padding-right: 10%; }
+  @media screen and (min-width: 69em) {
+    .profile__content {
+      padding-left: 0;
+      padding-right: 0; } }
 
 .profile__image {
-  position: relative;
-  height: 30rem;
-  overflow: hidden;
-  max-width: 35rem; }
+  position: relative; }
   .profile__image img {
-    width: 95%;
-    height: auto; }
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    width: 20rem;
+    height: 20rem; }
+    @media screen and (min-width: 35em) {
+      .profile__image img {
+        width: 24rem;
+        height: 24rem; } }
 
-[src="assets/dileep.jpg"] {
-  position: absolute;
-  top: 2%; }
-  @media screen and (min-width: 64em) {
-    [src="assets/dileep.jpg"] {
-      top: -10%; } }
+.profile__name, .profile__qualification {
+  text-align: center; }
+
+@media screen and (min-width: 64em) {
+  #about-us {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center; } }
 
 .contact {
   float: left;
@@ -931,6 +953,9 @@ html {
 
 .glide {
   min-width: 100vw; }
+  @media screen and (min-width: 35em) {
+    .glide {
+      padding-top: 4rem; } }
 
 .glide__slide {
   position: relative;
@@ -956,7 +981,7 @@ html {
 
 .glide__text {
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 0;
   right: 0;
   color: white;
@@ -972,16 +997,26 @@ html {
       padding: 3rem 25%; } }
   @media screen and (min-width: 69em) {
     .glide__text {
-      font-size: 1.75rem; } }
+      font-size: 1.75rem;
+      top: 25%; } }
 
 .glide__icon {
   position: absolute;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 6rem;
-  width: 6rem;
+  height: 3rem;
+  width: 3rem;
   top: 15%;
-  left: calc(50% - 3rem); }
+  left: calc(50% - 1.5rem); }
+  @media screen and (min-width: 64em) {
+    .glide__icon {
+      height: 4rem;
+      width: 4rem; } }
+  @media screen and (min-width: 69em) {
+    .glide__icon {
+      height: 6rem;
+      width: 6rem;
+      left: calc(50% - 3rem); } }
 
 .glide__icon--1 {
   background-image: url("../assets/icon-1.svg"); }
