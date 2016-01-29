@@ -767,9 +767,9 @@ html {
     margin-right: 0; }
 
 .profile__content {
-  padding-left: 10%;
-  padding-right: 10%; }
-  @media screen and (min-width: 69em) {
+  padding-left: 5%;
+  padding-right: 5%; }
+  @media screen and (min-width: 64em) {
     .profile__content {
       padding-left: 0;
       padding-right: 0; } }
