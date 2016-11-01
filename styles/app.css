@@ -745,7 +745,10 @@ html {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  margin-top: 1cm;
+}
+
   .profile:last-child {
     margin-right: 0; }
   @media screen and (min-width: 64em) {
