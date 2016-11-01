@@ -767,7 +767,7 @@ html {
   width: 100%; }
   .profile__image:last-child, .profile__content:last-child {
     margin-right: 0;
-  margin-top: 1cm;}
+}
 
 .profile__content {
   padding-left: 5%;
@@ -778,7 +778,10 @@ html {
       padding-right: 0; } }
 
 .profile__image {
-  position: relative; }
+  position: relative;
+    margin-top: 2cm;
+
+}
   .profile__image img {
     border-radius: 50%;
     text-align: center;
