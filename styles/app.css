@@ -746,7 +746,6 @@ html {
   margin-right: 2.35765%;
   width: 100%;
   margin-bottom: 2rem;
-  margin-top: 1cm;
 }
 
   .profile:last-child {
@@ -767,7 +766,8 @@ html {
   margin-right: 2.35765%;
   width: 100%; }
   .profile__image:last-child, .profile__content:last-child {
-    margin-right: 0; }
+    margin-right: 0;
+  margin-top: 1cm;}
 
 .profile__content {
   padding-left: 5%;
