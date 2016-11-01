@@ -779,7 +779,7 @@ html {
 
 .profile__image {
   position: relative;
-    margin-top: 5cm;}
+ }
 
   .profile__image img {
     border-radius: 50%;
