@@ -1026,3 +1026,6 @@ html {
 
 .glide__icon--3 {
   background-image: url("../assets/icon-3.svg"); }
+
+.centerfooter { text-align: center;  font-size: 1.2rem;  }
+
